@@ -511,6 +511,7 @@ function TaskColumn({
       className={`column ${
         dragOverStatus === status ? "column-dropping" : ""
       }`}
+      data-status={status}
       onDragOver={(e) => e.preventDefault()}
       onDrop={(e) => onDropStatus(status, e)}
       onDragEnter={() => onDragEnterStatus(status)}
@@ -578,6 +579,7 @@ function TaskCard({
                 className={
                   value === task.status ? "status-button active" : "status-button"
                 }
+                data-status={value}
                 onClick={() => onStatusChange(task, value)}
               >
                 {label}
