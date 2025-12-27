@@ -1,0 +1,14 @@
+# Python Specific Files/Folders
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+venv
+
+# Git
+.git
+.gitignore
+
+# Operating System Files
+.DS_Store
+Thumbs.db
